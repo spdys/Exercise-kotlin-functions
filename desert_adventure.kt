@@ -1,6 +1,7 @@
 fun main() {
     greetTraveller()
     println(findOasis(10, 20))
+    println(currentTemperature(25, 40))
 }
 
 fun greetTraveller() {
@@ -9,4 +10,8 @@ fun greetTraveller() {
 
 fun findOasis(x: Int, y: Int): String {
     return "Oasis found at coordinates ($x, $y)"
+}
+
+fun currentTemperature(morningTemperature: Int, afternoonTemperature: Int): Int {
+    return (morningTemperature+afternoonTemperature)/2
 }
