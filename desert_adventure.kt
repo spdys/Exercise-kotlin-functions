@@ -12,6 +12,6 @@ fun findOasis(x: Int, y: Int): String {
     return "Oasis found at coordinates ($x, $y)"
 }
 
-fun currentTemperature(morningTemperature: Int, afternoonTemperature: Int): Int {
-    return (morningTemperature+afternoonTemperature)/2
+fun currentTemperature(morningTemperature: Int, afternoonTemperature: Int): String {
+    return "Average Temperature: ${(morningTemperature+afternoonTemperature)/2}"
 }
