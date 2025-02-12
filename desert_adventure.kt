@@ -25,5 +25,6 @@ fun startCamelRide(time: Int, speed: Int = 5): String {
 
 fun exploreDune(height: Int, climbRate: Int): String {
     var time: Double = height.toDouble()/climbRate.toDouble()
-    return "Time to Climb the Dune: $time hours"
+    return "Time to Climb the Dune: ${"%.2f".format(time)} hours"
+
 }
