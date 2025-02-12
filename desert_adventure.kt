@@ -5,6 +5,7 @@ fun main() {
     println(startCamelRide(10, 5))
     println(startCamelRide(10))
     println(exploreDune(climbRate = 3, height = 20))
+    println(survivalChance(8))
 }
 
 fun greetTraveller() {
@@ -26,5 +27,8 @@ fun startCamelRide(time: Int, speed: Int = 5): String {
 fun exploreDune(height: Int, climbRate: Int): String {
     var time: Double = height.toDouble()/climbRate.toDouble()
     return "Time to Climb the Dune: ${"%.2f".format(time)} hours"
+}
 
+fun survivalChance(supplies: Int): String {
+    return "Survival Chance: ${supplies*10}"
 }
